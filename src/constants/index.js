@@ -7,14 +7,14 @@ const navItems = [
     name: "About",
     href: "#about",
   },
-  {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
-    name: "Testimonials",
-    href: "#testimonials",
-  },
+  // {
+  //   name: "Projects",
+  //   href: "#projects",
+  // },
+  // {
+  //   name: "Testimonials",
+  //   href: "#testimonials",
+  // },
   {
     name: "Contact",
     href: "#contact",

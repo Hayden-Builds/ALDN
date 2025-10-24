@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="w-full h-full container md:my-40 my-20">
         <TitleHeader
           title="GET IN TOUCH"
-          number="05"
+          number="02"
           text="Let’s build the next generation of web experiences together"
         />
         <div className="mt-20">

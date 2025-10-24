@@ -25,15 +25,8 @@ const About = () => {
           <div className="grid grid-cols-12 md:grid-rows-12 gap-5">
             <div className="md:col-span-7 col-span-12 row-span-5">
               <div className="bg-black-300 rounded-2xl p-7 w-full h-full">
-                {/* <div>
-                  <img
-                    src="/images/flower.svg"
-                    alt="flower"
-                    className="md:w-32 w-16 flower"
-                  />
-                </div> */}
                 <div className="mt-5">
-                  <h1 className="text-blue-50 md:text-5xl text-3xl">
+                  <h1 className="gradient-title md:text-3xl text-2xl font-medium">
                     About ALDN
                   </h1>
                   <p className="md:text-2xl mt-2">
