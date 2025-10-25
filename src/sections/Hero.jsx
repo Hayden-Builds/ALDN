@@ -27,7 +27,7 @@ const Hero = () => {
               <div className="flex flex-col items-center md:gap-5 gap-1">
                 <p className="md:text-base text-xs">Explore</p>
                 <img
-                  src="images/arrowdown.svg"
+                  src={import.meta.env.BASE_URL + "images/arrowdown.svg"}
                   alt="arrowdown"
                   className="size-7 animate-bounce"
                 />

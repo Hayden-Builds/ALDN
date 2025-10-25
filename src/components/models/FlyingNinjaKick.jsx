@@ -5,7 +5,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export function FlyingNinjaKick(props) {
   const group = useRef()
-  const { scene, animations } = useGLTF('/models/flying-ninja-kick-transformed.glb')
+  const { scene, animations } = useGLTF(import.meta.env.BASE_URL + 'models/flying-ninja-kick-transformed.glb')
 
   // Clone the scene so multiple instances can exist independently
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
@@ -50,4 +50,4 @@ export function FlyingNinjaKick(props) {
   )
 }
 
-useGLTF.preload('/models/flying-ninja-kick-transformed.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/flying-ninja-kick-transformed.glb')

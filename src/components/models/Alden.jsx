@@ -11,7 +11,7 @@ export function Alden(props) {
   const { progress } = useProgress();
   const [isIntroAnimationDone, setIsIntroAnimationDone] = useState(false);
 
-  const { scene } = useGLTF('/models/alden-transformed.glb')
+  const { scene } = useGLTF(import.meta.env.BASE_URL + 'models/alden-transformed.glb')
   // const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   // After cloning the scene and before return
 const clone = React.useMemo(() => {
@@ -112,4 +112,4 @@ const clone = React.useMemo(() => {
   )
 }
 
-useGLTF.preload('/models/alden-transformed.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/alden-transformed.glb')

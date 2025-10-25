@@ -5,7 +5,7 @@ const NavBar = () => {
     <div className="w-full flex-center fixed z-50 top-0 left-0 md:p-0 px-5 border-b border-gray-800 bg-black-100/70 backdrop-blur-sm">
       <div className="container my-4 flex items-center justify-between">
         <img
-          src="/images/brand-light.png"
+          src={import.meta.env.BASE_URL + "images/brand-light.png"}
           alt="logo"
           className="md:size-12 size-10 object-cover object-center"
         />

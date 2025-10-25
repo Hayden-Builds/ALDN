@@ -15,7 +15,7 @@ import { SkeletonUtils } from "three-stdlib";
 
 export function Alien(props) {
   const group = React.useRef();
-  const { scene, animations } = useGLTF("/models/alien-transformed.glb");
+  const { scene, animations } = useGLTF(import.meta.env.BASE_URL + "models/alien-transformed.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
   const { actions } = useAnimations(animations, group);
@@ -49,4 +49,4 @@ export function Alien(props) {
   );
 }
 
-useGLTF.preload("/models/alien-transformed.glb");
+useGLTF.preload(import.meta.env.BASE_URL + "models/alien-transformed.glb");

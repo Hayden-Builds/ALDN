@@ -17,7 +17,7 @@ export function Boy(props) {
   const { progress, total } = useProgress();
   const [isIntroAnimationDone, setIsIntroAnimationDone] = useState(false);
 
-  const { scene } = useGLTF("/models/boy-transformed.glb");
+  const { scene } = useGLTF(import.meta.env.BASE_URL + "models/boy-transformed.glb");
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
 
@@ -117,4 +117,4 @@ export function Boy(props) {
   );
 }
 
-useGLTF.preload("/models/boy-transformed.glb");
+useGLTF.preload(import.meta.env.BASE_URL + "models/boy-transformed.glb");

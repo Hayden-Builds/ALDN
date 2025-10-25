@@ -12,11 +12,11 @@ import { useEffect, useMemo, useRef } from "react";
 export function ContactBoy(props) {
   const group = useRef();
 
-  const { scene } = useGLTF("/models/boy-transformed.glb");
+  const { scene } = useGLTF(import.meta.env.BASE_URL + "models/boy-transformed.glb");
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
 
-  const { animations } = useFBX("/models/Wave Hip Hop Dance.fbx");
+  const { animations } = useFBX(import.meta.env.BASE_URL + "models/Wave Hip Hop Dance.fbx");
   animations[0].name = "Dance";
   const action = useAnimations(animations, group);
 
@@ -88,4 +88,4 @@ export function ContactBoy(props) {
   );
 }
 
-useGLTF.preload("/models/boy-transformed.glb");
+useGLTF.preload(import.meta.env.BASE_URL + "models/boy-transformed.glb");

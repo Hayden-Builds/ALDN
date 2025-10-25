@@ -108,7 +108,7 @@ const About = () => {
                     </div>
                     <div className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform">
                       <img
-                        src="/images/arrowupright.svg"
+                        src={import.meta.env.BASE_URL + "images/arrowupright.svg"}
                         alt="arrow-up"
                         className="md:scale-100 scale-50"
                       />

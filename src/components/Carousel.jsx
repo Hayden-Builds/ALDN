@@ -58,7 +58,7 @@ const Carousel = () => {
                         Preview Project
                       </p>
                       <img
-                        src="/images/arrowupright.svg"
+                        src={import.meta.env.BASE_URL + "images/arrowupright.svg"}
                         alt="arrow"
                         className="md:size-10 size-7"
                       />

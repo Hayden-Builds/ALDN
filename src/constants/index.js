@@ -25,22 +25,22 @@ const bentoSocialLinks = [
   {
     name: "Facebook",
     href: "https://www.facebook.com/",
-    icon: "/images/fb.svg",
+    icon: import.meta.env.BASE_URL + "images/fb.svg",
   },
   {
     name: "Instagram",
     href: "https://www.facebook.com/",
-    icon: "/images/insta.svg",
+    icon: import.meta.env.BASE_URL + "images/insta.svg",
   },
   {
     name: "LinkedIn",
     href: "https://www.facebook.com/",
-    icon: "/images/linkedin.svg",
+    icon: import.meta.env.BASE_URL + "images/linkedin.svg",
   },
   {
     name: "WhatsApp",
     href: "https://www.facebook.com/",
-    icon: "/images/whatsapp.svg",
+    icon: import.meta.env.BASE_URL + "images/whatsapp.svg",
   },
 ];
 

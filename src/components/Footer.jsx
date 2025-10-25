@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="w-full flex-center flex-col md:gap-3 gap-3 bg-black-300 py-5">
       <div>
         <img
-          src="/images/brand-light.png"
+          src={import.meta.env.BASE_URL + "images/brand-light.png"}
           alt="logo"
           className="w-12 h-12 object-cover object-center"
         />

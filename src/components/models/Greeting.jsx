@@ -5,7 +5,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export function Greeting(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('/models/greeting-transformed.glb')
+  const { scene, animations } = useGLTF(import.meta.env.BASE_URL + 'models/greeting-transformed.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions } = useAnimations(animations, group)
@@ -35,4 +35,4 @@ export function Greeting(props) {
   )
 }
 
-useGLTF.preload('/models/greeting-transformed.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/greeting-transformed.glb')

@@ -11,7 +11,7 @@ import { SkeletonUtils } from 'three-stdlib'
 
 export function PointingRight(props) {
   const group = React.useRef()
-  const { scene, animations } = useGLTF('/models/pointing-right-transformed.glb')
+  const { scene, animations } = useGLTF(import.meta.env.BASE_URL + 'models/pointing-right-transformed.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions } = useAnimations(animations, group)
@@ -41,4 +41,4 @@ export function PointingRight(props) {
   )
 }
 
-useGLTF.preload('/models/pointing-right-transformed.glb')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/pointing-right-transformed.glb')
