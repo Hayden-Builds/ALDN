@@ -19,7 +19,7 @@ const About = () => {
         <TitleHeader
           title="About Us"
           number="01"
-          text="Premium Web Design & Development by Alden"
+          text="Premium Web Design & Development"
         />
         <div className="md:mt-20 mt-10">
           <div className="grid grid-cols-12 md:grid-rows-12 gap-5">
@@ -98,23 +98,30 @@ const About = () => {
             </div>
             {bentoSocialLinks.map((item, index) => (
               <div key={index} className="md:col-span-4 col-span-12 row-span-2">
-                <div className="bg-black-300 rounded-2xl p-7 w-full h-full group cursor-pointer">
-                  <div className="flex justify-between items-center h-full">
-                    <div className="flex items-center md:gap-5">
-                      <img src={item.icon} alt={item.icon} />
-                      <h1 className="gradient-title md:text-3xl text-xl md:m-0 ms-5 font-medium">
-                        {item.name}
-                      </h1>
-                    </div>
-                    <div className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform">
-                      <img
-                        src={import.meta.env.BASE_URL + "images/arrowupright.svg"}
-                        alt="arrow-up"
-                        className="md:scale-100 scale-50"
-                      />
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-black-300 rounded-2xl p-7 w-full h-full group cursor-pointer"
+                >
+                  <div className="bg-black-300 rounded-2xl p-7 w-full h-full group cursor-pointer">
+                    <div className="flex justify-between items-center h-full">
+                      <div className="flex items-center md:gap-5">
+                        <img src={item.icon} alt={item.icon} />
+                        <h1 className="gradient-title md:text-3xl text-xl md:m-0 ms-5 font-medium">
+                          {item.name}
+                        </h1>
+                      </div>
+                      <div className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform">
+                        <img
+                          src={import.meta.env.BASE_URL + "images/arrowupright.svg"}
+                          alt="arrow-up"
+                          className="md:scale-100 scale-50"
+                        />
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             ))}
           </div>

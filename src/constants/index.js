@@ -22,24 +22,24 @@ const navItems = [
 ];
 
 const bentoSocialLinks = [
-  {
-    name: "Facebook",
-    href: "https://www.facebook.com/",
-    icon: import.meta.env.BASE_URL + "images/fb.svg",
-  },
-  {
-    name: "Instagram",
-    href: "https://www.facebook.com/",
-    icon: import.meta.env.BASE_URL + "images/insta.svg",
-  },
+  // {
+  //   name: "Facebook",
+  //   href: "https://www.facebook.com/",
+  //   icon: import.meta.env.BASE_URL + "images/fb.svg",
+  // },
+  // {
+  //   name: "Instagram",
+  //   href: "https://www.facebook.com/",
+  //   icon: import.meta.env.BASE_URL + "images/insta.svg",
+  // },
   {
     name: "LinkedIn",
-    href: "https://www.facebook.com/",
+    href: "https://www.linkedin.com/",
     icon: import.meta.env.BASE_URL + "images/linkedin.svg",
   },
   {
     name: "WhatsApp",
-    href: "https://www.facebook.com/",
+    href: "https://wa.me/27728646915",
     icon: import.meta.env.BASE_URL + "images/whatsapp.svg",
   },
 ];

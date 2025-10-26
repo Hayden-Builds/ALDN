@@ -34,9 +34,9 @@ const ContactForm = () => {
     setLoading(true);
     try {
       const payload = {
-        from_name: data.name,
-        to_name: "Full Stack Developer",
-        message: data.message,
+        from_name: data.email,
+        to_name: "ALDN",
+        message: data.message + '' + data.email, 
         reply_to: data.email,
         subject: data.subject,
       };
